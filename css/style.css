@@ -377,9 +377,7 @@ header {
 		color: var(--clr-light);
 		grid-column: 1 / -1;
 		grid-row: 2;
-		width: 100vw;
-		right: 50%;
-		margin-right: -50vw;
+
 		text-align: left;
 		/*left: -5em;
     padding-left: 7em;
@@ -439,12 +437,7 @@ header {
 		grid-area: subtitle;
 		grid-column: 1 / -1;
 		grid-row: 2;
-		width: 80vw;
 		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
 		text-align: right;
 	}
 	
@@ -587,12 +580,7 @@ header {
 		grid-area: subtitle;
 		grid-column: 1 / -1;
 		grid-row: 2;
-		width: 100vw;
 		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -40vw;
-		margin-right: -50vw;
 		text-align: left;
 	}
 	.contact__body {
