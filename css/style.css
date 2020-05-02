@@ -15,6 +15,8 @@
 	--clr-light: #fff;
 	--clr-dark: #303030;
 	--clr-accent: #d32f2f;
+	--clr-hover: #791e2d;
+	--clr-alt-bg: #f2f2f2;
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
@@ -47,6 +49,11 @@ body {
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	line-height: 1.6;
+}
+
+blockquote {
+	font-size: 1.5rem;
+	line-height: 1.4;
 }
 
 img {
@@ -86,7 +93,7 @@ textarea {
 	padding: .5em;
 	min-width: 100%;
 	width: 100%;
-	background: #f2f2f2;
+	background: var(--clr-alt-bg);
 	border: none;
 	outline: 0;
 	color: black;
@@ -116,12 +123,11 @@ textarea:hover {
 	letter-spacing: 2px;
 	margin: 0 auto;
 	font-weight: var(--fw-bold);
-	transition: transform 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
 }
 
 .btn:hover {
-	background: #ffa800;
-	transform: scale(1.1);
+	background: var(--clr-hover);
 }
 
 
@@ -199,7 +205,8 @@ header {
 }
 
 .logo {
-	max-width: 50px;
+	max-width: 60px;
+	height: auto;
 }
 
 .nav {
@@ -305,11 +312,12 @@ header {
 .intro {
 	text-align: center;
 	padding-bottom: 0;
-	background-image: url(https://dathomas1.github.io/img/notebook-background.jpg);
+	background-image: url(../img/notebook-background-600px.jpg);
 	background-blend-mode: multiply;
 	background-size: cover;
 	color: var(--clr-light);
 	border-bottom-right-radius: 90% 95%;
+	margin-bottom: 2em;
 }
 
 
@@ -333,11 +341,15 @@ header {
 	align-self: end;
 	padding-top: 1.25em;
 }
-.section__subtitle-intro {
+.section__subtitle--intro {
 	display: inline-block;
+	background: var(--clr-dark);
+	margin-right: 0;
 }
 @media (min-width: 600px) {
 	.intro {
+		background-attachment: fixed;
+		background-image: url(../img/notebook-background.jpg);
 		border-bottom-left-radius: 20% 10%;
 	}
 	
@@ -377,8 +389,11 @@ header {
 		color: var(--clr-light);
 		grid-column: 1 / -1;
 		grid-row: 2;
-
+		width: 100vw;
+    	right: 50%;
+    	margin-right: -50vw;
 		text-align: left;
+		padding-right: 30vw;
 		/*left: -5em;
     padding-left: 7em;
     padding-right: calc(300px + 7em);
@@ -394,7 +409,17 @@ header {
 	margin: 0 auto;
 	padding-top: 0.5em;
 }
-.section__title--services::after,
+
+.section__title--services,
+.section__title--work {
+	margin-bottom: 1em;
+}
+
+
+.section__subtitle--process {
+	text-align: left;
+}
+/*.section__title--services::after,
 .section__title--work::after {
 	content: '';
 	display: block;
@@ -403,7 +428,7 @@ header {
 	margin: 0.5em auto 1em;
 	background: currentColor;
 	opacity: 0.5;
-}
+} */
 .process {
 	text-align: left;
 }
@@ -438,7 +463,13 @@ header {
 		grid-column: 1 / -1;
 		grid-row: 2;
 		position: relative;
-		text-align: right;
+		width: 90vw;
+    	left: 50%;
+    	right: 50%;
+    	margin-left: -50vw;
+    	margin-right: -50vw;
+    	padding-left: 20%;
+		text-align: left;
 	}
 	
 	.process {
@@ -458,6 +489,7 @@ header {
 	}
 	
 	.process__img {
+		border-radius: 5px;
 		box-shadow: var(--bs);
 		/*transform: rotate3d(155,120,-110,70deg);*/
 		transition: all 700ms ease-in-out;
@@ -495,13 +527,14 @@ header {
 }
 .section__title--services {
 	position: relative;
+	margin-bottom: 1em;
 }
 .services {
 	margin-bottom: 0;
 	max-width: var(--max-width);
 }
 .service {
-	margin: .5em auto 4em;
+	margin: .5em auto 3em;
 	max-width: 500px;
 }
 @media (min-width: 800px) {
@@ -512,6 +545,11 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.service {
+		margin: .5em auto 4em;
+		max-width: 500px;
+	}
 	/*.services {
     display: flex;
     margin-left: auto;
@@ -520,7 +558,6 @@ header {
   
   .service + .service {
     margin-left: 2em; */
-}
 
 }
 
@@ -582,6 +619,12 @@ header {
 		grid-row: 2;
 		position: relative;
 		text-align: left;
+		width: 100vw;
+	    position: relative;
+	    left: 50%;
+	    right: 50%;
+	    margin-left: -40vw;
+	    margin-right: -50vw;
 	}
 	.contact__body {
 		grid-area: text;
@@ -676,7 +719,7 @@ header {
 	.my-work {
 		background-attachment: fixed;
 		background-color: var(--clr-dark);
-		background-image: url(https://dathomas1.github.io/img/notebook-background.jpg);
+		background-image: url(../img/notebook-background.jpg);
 		background-blend-mode: multiply;
 		background-size: cover;
 	}
@@ -687,6 +730,58 @@ header {
 	}
 	.portfolio__info--title {}
 	.portfolio__info--body {}
+}
+
+/* Testimonial */
+.testimonial {
+	background: var(--clr-alt-bg);
+	margin-bottom: 3em;
+}
+
+.testimonial__box > * {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.testimonial__img {
+	border-radius: 50%;
+	max-width: 200px;
+	height: auto;
+}
+
+.testimonial__author em {
+	color: var(--clr-accent);
+}
+
+@media (min-width: 600px) {
+	.testimonial {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.testimonial__box {
+		background-color: var(--clr-alt-bg);
+		display: grid;
+		grid-column-gap: 2em;
+		grid-template-areas: "img quote" "img author";
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: var(--max-width);
+	}
+
+	blockquote {
+		grid-area: quote;
+	}
+
+	.testimonial__img {
+		grid-area: img;
+	}
+
+	.testimonial__author {
+		grid-area: author;
+	}
 }
 
 /* Footer */
