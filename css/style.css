@@ -157,7 +157,7 @@ h3 {
 }
 
 .section__title--intro {
-	font-weight: var(--fw-reg);
+	font-weight: var(--fw-bold);
 	/*text-transform: uppercase;*/
 }
 
@@ -322,6 +322,7 @@ header {
 	padding-bottom: 0;
 	background-image: url(../img/notebook-background-600px.jpg);
 	background-blend-mode: multiply;
+	background-color: gray;
 	background-size: cover;
 	color: var(--clr-light);
 	border-bottom-right-radius: 90% 95%;
@@ -351,12 +352,13 @@ header {
 }
 .section__subtitle--intro {
 	display: inline-block;
-	background: var(--clr-dark);
+	background: var(--clr-alt-bg);
+	color: var(--clr-dark);
 	margin-right: 0;
 }
 @media (min-width: 600px) {
 	.intro {
-		background-attachment: fixed;
+		
 		background-image: url(../img/notebook-background.jpg);
 		border-bottom-left-radius: 20% 10%;
 	}
@@ -393,8 +395,6 @@ header {
 	
 	.section__subtitle--intro {
 		align-self: start;
-		background: var(--clr-dark);
-		color: var(--clr-light);
 		grid-column: 1 / -1;
 		grid-row: 2;
 		width: 100vw;
