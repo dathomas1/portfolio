@@ -11,9 +11,11 @@ navLinks.forEach(link => {
   })
 })
 
+/*
 AOS.init({
    duration: 800,
    delay: 300,
    once: true,
    disable: 'mobile'
 }); 
+*/

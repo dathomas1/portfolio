@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="icons/favicon-180x180.png" sizes="180x180">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
   </head>
@@ -44,9 +44,9 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <div class="intro__body">
-        <h1 class="section__title section__title--intro" data-aos="fade-down" data-aos-duration="2000">Darnell Thomas</h1>
-        <p class="section__subtitle section__subtitle--intro" data-aos="fade-left" data-aos-duration="2500">Web Developer and Designer specializing in websites for small businesses, non-profits, and churches.</p>
-        <a href="#contact" class="btn intro__btn" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="1000">Contact Me</a>
+        <h1 class="section__title section__title--intro">Darnell Thomas</h1>
+        <p class="section__subtitle section__subtitle--intro">Web Developer and Designer specializing in websites for small businesses, non-profits, and churches.</p>
+        <a href="#contact" class="btn intro__btn">Contact Me</a>
       </div>
     </section>
 
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Testimonial section -->
-    <section class="testimonial" id="testimonial" data-aos="fade-right" data-aos-duration="1000">
+    <section class="testimonial" id="testimonial">
       <div class="testimonial__box">
         <img src="img/Dr-Shirley-C-Taite.jpg" alt="Dr. Shirley C Taite" class="testimonial__img"/>
         <blockquote class="testimonial__quote">
@@ -168,7 +168,7 @@
     <!-- Contact Me-->
     <section class="contact-me" id="contact">
       <h2 class="section__title section__title--contact">Get in touch</h2>
-      <p class="section__subtitle section__subtitle--contact" data-aos="fade-left" data-aos-duration="1000">Web Developer and Designer</p>
+      <p class="section__subtitle section__subtitle--contact">Web Developer and Designer</p>
       
       <div class="contact__body">
         <p>Request a consultation or quote. Let's discuss your project.
@@ -190,6 +190,9 @@
             <label for="email">Your Message</label>
             <textarea class="form-control" name="message" rows="10" cols="50" required></textarea>
         </div>
+	<input type="hidden" name="_replyto">
+	<input type="hidden" name="_subject" value="[Website Request]">
+	<input type="text" name="_honey" style="display:none">
         <button type="submit" class="btn btn-contact-submit">Submit Form</button>
         <br>
     </form>
@@ -215,7 +218,7 @@
       </ul>
       -->
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
