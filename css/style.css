@@ -41,6 +41,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
 	background: var(--clr-light);
 	color: var(--clr-dark);
@@ -322,7 +328,6 @@ header {
 	padding-bottom: 0;
 	background-image: url(../img/notebook-background-600px.jpg);
 	background-blend-mode: multiply;
-	background-color: gray;
 	background-size: cover;
 	color: var(--clr-light);
 	border-bottom-right-radius: 90% 95%;
@@ -352,14 +357,15 @@ header {
 }
 .section__subtitle--intro {
 	display: inline-block;
-	background: var(--clr-alt-bg);
-	color: var(--clr-dark);
+	background: var(--clr-dark);
 	margin-right: 0;
 }
 @media (min-width: 600px) {
 	.intro {
-		
+		background-attachment: fixed;
 		background-image: url(../img/notebook-background.jpg);
+		background-blend-mode: multiply;
+		background-color: #ccc;
 		border-bottom-left-radius: 20% 10%;
 	}
 	
@@ -391,17 +397,20 @@ header {
 		align-self: end;
 		color: var(--clr-light);
 		padding-top: 0.75em;
+		text-align: left;
 	}
 	
 	.section__subtitle--intro {
 		align-self: start;
+		background: var(--clr-dark);
+		color: var(--clr-light);
 		grid-column: 1 / -1;
 		grid-row: 2;
 		width: 100vw;
     	right: 50%;
     	margin-right: -50vw;
 		text-align: left;
-		padding-right: 30vw;
+		padding-right: 40vw;
 		/*left: -5em;
     padding-left: 7em;
     padding-right: calc(300px + 7em);
@@ -472,12 +481,14 @@ header {
 		grid-column: 1 / -1;
 		grid-row: 2;
 		position: relative;
-		width: 90vw;
+		/*
+	width: 90vw;
     	left: 50%;
     	right: 50%;
     	margin-left: -50vw;
     	margin-right: -50vw;
     	padding-left: 20%;
+		*/
 		text-align: left;
 	}
 	
@@ -618,6 +629,7 @@ header {
 		grid-column-gap: 2em;
 		margin: 0 auto;
 		max-width: var(--max-width);
+		padding: 0 0 5em;
 	}
 	.section__title--contact {
 		grid-area: title;
@@ -628,12 +640,14 @@ header {
 		grid-row: 2;
 		position: relative;
 		text-align: left;
+		/*
 		width: 100vw;
 	    position: relative;
 	    left: 50%;
 	    right: 50%;
 	    margin-left: -40vw;
 	    margin-right: -50vw;
+		*/
 	}
 	.contact__body {
 		grid-area: text;
