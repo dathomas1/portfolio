@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
   </head>
   <body>
+    <div class="page-container">
     <header>
       <div class="logo">
-        <a href"#">
+        <a href="#">
           <img src="icons/favicon-180x180.png" alt=""/>
         </a>
       </div>
@@ -40,6 +41,7 @@
         </ul>
       </nav>
     </header>
+    <main>
     
     <!-- Introduction -->
     <section class="intro" id="home">
@@ -56,19 +58,19 @@
       <div class="services">
         <div class="service">
           <h3>Design Your Site</h3>
-          <p>Inform your customers with an appealing website. Customers and clients will be able to find you, find your location, and contact you.</p>
+          <p>Inform your customers of your location, hours, and goals with an appealing website.</p>
         </div> <!-- /service -->
         <div class="service">
           <h3>Move Your Site</h3>
-          <p>Never feel locked in to a hosting company. I transfer files, content, and domains from your previous hosting company. I even transfer designs from static site web-builders and rebuild them with your new host.</p>
+          <p>Never feel locked in to a hosting company. Transfer files, content, and domains from your previous hosting company.</p>
         </div> <!-- /service -->
         <div class="service">
           <h3>Customize Your Wordpress Site</h3>
-          <p> Easily update and manage your site with Wordpress. I convert your static websites into dynamic Wordpress designs to streamline content creation.</p>
+          <p> Easily update and manage your site with Wordpress. Convert your static websites into dynamic Wordpress designs to streamline content creation.</p>
         </div> <!-- /service -->       
         <div class="service">
           <h3>Maintain Your Site</h3>
-          <p>Have more time to focus on your business with our support plans. I update content, provide training, and perform routine backups so you don't have to.</p>
+          <p>Have more time to focus on your business with our support plans. Plans include content updates, training, and backups.</p>
         </div> <!-- /service -->
       </div> <!-- /services -->  
     </section>
@@ -77,7 +79,7 @@
 
     <!-- Projects -->
     <section class="my-work" id="projects">
-      <h2 class="section__title section__title--work">My recent work</h2>
+      <h2 class="section__title section__title--work">Recent work</h2>
       <p class="section__subtitle section__subtitle--work"></p>
       
       <div class="portfolio">
@@ -98,7 +100,7 @@
           </div> -->
           <div class="portfolio__info">
             <a href="https://www.forgivenfinancialsolutions.com" target="_blank"><h3 class="portfolio__info--title">Forgiven Financial Solutions</h3></a>
-            <p class="portfolio__info--body">Developed a custom Wordpress theme to show services and the multiple locations. Integrated existing branding from the previously created Forgiven Auto website.</p>
+            <p class="portfolio__info--body">Developed a custom Wordpress theme to inform customers of franchise locations.</p>
           </div>
         </div>
         
@@ -120,10 +122,11 @@
           </div> -->
           <div class="portfolio__info">
             <a href="https://www.gatewayglobaloutreach.com" target="_blank"><h3 class="portfolio__info--title">Gateway Global Outreach</h3></a>
-            <p class="portfolio__info--body">Migrated website from Wix to a modified Wordpress theme. Also, helped secure a hosting plan that fits their budget. Developed training guides to help members maintain their site.</p>
-            
+            <p class="portfolio__info--body">Migrated website from Wix to a modified Wordpress theme and provided training.</p>         
           </div>
         </div>
+      </div>
+      <a href="#contact-me" class="btn">Contact Me</a>
     </section>
 
     <!-- Testimonial section -->
@@ -143,15 +146,14 @@
     <section class="work-process" id="process">
       <div class="process__body">
         <h2 class="section__title section__title--process">How it works</h2>
-        <p class="section__subtitle section__subtitle--process">Your partner throughout the process</p>
         <div class="process">
           
           <h3>Step 1: Your Mission</h3>
-          <p>I will discuss your goals for your website. I ensure that key features are implemented to support your mission.</p>
+          <p>We discuss the goals for your website to ensure key features are implemented.</p>
           <h3>Step 2: Your Design</h3>
-          <p>I create a detailed mockup for your review so colors and fonts match your brand. I also convert previous designs into a fully functional site.</p>
+          <p>A mockup is created with colors and fonts match your brand before developing the finished site.</p>
           <h3>Step 3: Your Site</h3>
-          <p>I provide a finalized website for your review. Upon approval, I install the site on your host and provide training.</p>
+          <p>A fully functioning website provided for your review and installed on your host.</p>
         </div>
         <div class="process__img--container">
 
@@ -160,7 +162,7 @@
           <img src="img/mock-up.png" alt="" class="process__img"/>
           <img src="img/final.png" alt="" class="process__img"/>
         </div>
-        <a href="#contact-me" class="btn">Contact Me</a>
+        
       </div>
     </section>
     
@@ -168,10 +170,10 @@
     <!-- Contact Me-->
     <section class="contact-me" id="contact">
       <h2 class="section__title section__title--contact">Get in touch</h2>
-      <p class="section__subtitle section__subtitle--contact">Web Developer and Designer</p>
       
       <div class="contact__body">
-        <p>Request a consultation or quote. Let's discuss your project.
+        <p>Feel free to contact me with any questions and requests for consultation.</p> 
+        <p>Let's discuss your project.</p>
       </div>
       <form class="contact__form" target="_blank" action="https://formsubmit.co/ad933355685b9e09aba8c3c53094c10c" method="POST">
         <div class="form-group">
@@ -192,12 +194,13 @@
         </div>
 	<input type="hidden" name="_replyto">
 	<input type="hidden" name="_subject" value="[Website Request]">
+  <input type="hidden" name="_next" value="https://dathomasdesign.com/thanks.html">
 	<input type="text" name="_honey" style="display:none">
         <button type="submit" class="btn btn-contact-submit">Submit Form</button>
         <br>
     </form>
     </section>
-    
+    </main>
     
     <!-- Footer -->
     <footer class="footer">
@@ -218,6 +221,7 @@
       </ul>
       -->
     </footer>
+  </div>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="js/main.js"></script>
   </body>
