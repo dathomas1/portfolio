@@ -19,25 +19,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleV3.css">
   </head>
   <body>
     <div class="page-container">
     <header>
-      <div class="logo">
-        <a href="#">
-          <img src="icons/favicon-180x180.png" alt=""/>
-        </a>
-      </div>
+      <a href="#">
+        <div class="logo"></div>
+      </a>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Contact Me</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">What I can do</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Recent work</a></li>
+          <li class="nav__item"><a href="#process" class="nav__link">How it works</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Get in touch</a></li>
         </ul>
       </nav>
     </header>
@@ -47,7 +46,7 @@
     <section class="intro" id="home">
       <div class="intro__body">
         <h1 class="section__title section__title--intro">Darnell Thomas</h1>
-        <p class="section__subtitle section__subtitle--intro">Web Developer and Designer specializing in websites for small businesses, nonprofits, and churches.</p>
+        <p class="section__subtitle section__subtitle--intro">Web developer and designer specializing in websites for small businesses, nonprofits, and churches.</p>
         <a href="#contact" class="btn intro__btn">Contact Me</a>
       </div>
     </section>
@@ -186,18 +185,27 @@
                     <label for="email">Your Email</label>
                     <input type="email" name="email" class="form-control" required>
                 </div>
+                <div class="col">
+                    <label for="website">Your Website (optional)</label>
+                    <input type="url" name="website" class="form-control">
+                </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="email">Your Message</label>
+            <label for="message">Your Message</label>
             <textarea class="form-control" name="message" rows="10" cols="50" required></textarea>
         </div>
-	<input type="hidden" name="_replyto">
-	<input type="hidden" name="_subject" value="[Website Request]">
-  <input type="hidden" name="_next" value="https://dathomasdesign.com/thanks.html">
-	<input type="text" name="_honey" style="display:none">
+        
+        <label>Privacy Policy</label>
+        <div class="checkbox"> 
+          <input type="checkbox" id="consent" name="consent" class="form-checkbox " required>
+          <label for="consent">I consent to this website storing my information to respond to my inquiry.</label>
+        </div>
+      	<input type="hidden" name="_replyto">
+      	<input type="hidden" name="_subject" value="[Website Request]">
+        <input type="hidden" name="_next" value="https://dathomasdesign.com/thanks.html">
+      	<input type="text" name="_honey" style="display:none">
         <button type="submit" class="btn btn-contact-submit">Submit Form</button>
-        <br>
     </form>
     </section>
     </main>
