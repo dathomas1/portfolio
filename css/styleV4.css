@@ -969,7 +969,7 @@ header {
 /* Footer */
 .footer {
 	background: #111;
-	color: var(--clr-accent);
+	color: var(--clr-light);
 	display: block;
 	height: var(--height-footer);
 	position: absolute;
