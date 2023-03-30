@@ -1,0 +1,28 @@
+/* External background images */
+.intro {
+	text-align: center;
+	padding-bottom: 0;
+	background-image: url(../img/notebook-background-600px.jpg);
+	background-blend-mode: multiply;
+	background-size: cover;
+	color: var(--clr-light);
+	border-bottom-right-radius: 90% 95%;
+	margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+	.intro {
+		background-attachment: fixed;
+		background-image: url(../img/notebook-background.jpg);
+		background-blend-mode: multiply;
+		background-color: #ccc;
+		border-bottom-left-radius: 20% 10%;
+	}
+	.my-work {
+		background-attachment: fixed;
+		background-color: var(--clr-dark);
+		background-image: url(../img/notebook-background.jpg);
+		background-blend-mode: multiply;
+		background-size: cover;
+	}
+}
