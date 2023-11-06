@@ -392,8 +392,7 @@ header {
 .intro {
 	text-align: center;
 	padding-bottom: 0;
-      background-color: black;
-	background-blend-mode: multiply;
+      	background-color: black;
 	background-size: cover;
 	color: var(--clr-light);
 	border-bottom-right-radius: 90% 95%;
@@ -867,7 +866,6 @@ header {
 	.my-work {
 		background-attachment: fixed;
 		background-color: var(--clr-dark);
-		background-blend-mode: multiply;
 		background-size: cover;
 	}
 	.portfolio {
