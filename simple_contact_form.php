@@ -12,8 +12,6 @@ require 'PHPMailer-6.9.3/src/Exception.php';
 //Import the PHPMailer class into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 
-require '../vendor/autoload.php';
-
 if (array_key_exists('to', $_POST)) {
     $err = false;
     $msg = '';
