@@ -42,7 +42,7 @@ if (array_key_exists('to', $_POST)) {
     //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
     //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
     if (array_key_exists('to', $_POST) && in_array($_POST['to'], ['sales', 'support', 'accounts'], true)) {
-        $to = $_POST['to'] . '@example.com';
+        $to = 'darnell@dathomasdesign.com'; ///$_POST['to'] . '@example.com';
     } else {
         $to = 'darnell@dathomasdesign.com';
     }
